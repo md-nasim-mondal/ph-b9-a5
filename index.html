@@ -42,6 +42,7 @@
     </style>
   </head>
   <body>
+    <!-- Header Section Start -->
     <header class="w-[95%] lg:w-[82%] mx-auto">
       <!-- navBar section start  -->
       <nav class="mt-12 mb-7 font-raleway">
@@ -150,11 +151,12 @@
 
           
         </div>
-        <div class="relative lg:-translate-y-[50%] ">
-            <div class="flex flex-col lg:flex-row gap-6 items-center justify-center">
+        <!-- Card Container -->
+        <div class="relative lg:-translate-y-[50%] min-h-[20vh]">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-center h-full">
               <!-- 1st card -->
               <div
-                class="flex gap-4 px-6 py-8 border-b-[3px] border-[#1DD100] bg-[#FFFFFF] justify-center w-[full]  lg:w-[25%] rounded-3xl"
+                class="flex gap-4 px-6 py-8 border-b-[3px] border-[#1DD100] bg-[#FFFFFF] justify-center w-[full]  lg:w-[25%] rounded-3xl lg:min-h-[20vh] items-center"
               >
                 <div><img src="./images/people.png" alt="" /></div>
                 <div class="flex flex-col justify-center font-inter space-y-2">
@@ -170,9 +172,9 @@
               </div>
               <!-- 2nd card -->
               <div
-                class="flex gap-4 px-5 py-8 border-b-[3px] border-[#1DD100] bg-[#FFFFFF] justify-center w-[full]  lg:w-[25%] rounded-3xl"
+                class="flex gap-4 px-5 py-8 border-b-[3px] border-[#1DD100] bg-[#FFFFFF] justify-center w-[full]  lg:w-[25%] rounded-3xl lg:min-h-[20vh] items-center"
               >
-                <div><img src="./images/people.png" alt="" /></div>
+                <div><img src="./images/ticket-cupon.png" alt="" /></div>
                 <div class="flex flex-col justify-center font-inter space-y-2">
                   <h1
                     class="text-4xl font-bold leading-5 text-left text-[#030712]"
@@ -186,9 +188,9 @@
               </div>
               <!-- 3rd card -->
               <div
-                class="flex gap-4 px-6 py-8 border-b-[3px] border-[#1DD100] bg-[#FFFFFF] justify-center w-[full]  lg:w-[25%] rounded-3xl"
+                class="flex gap-4 px-6 py-8 border-b-[3px] border-[#1DD100] bg-[#FFFFFF] justify-center w-[full]  lg:w-[25%] rounded-3xl lg:min-h-[20vh] items-center"
               >
-                <div><img src="./images/people.png" alt="" /></div>
+                <div><img src="./images/stoppage.png" alt="" /></div>
                 <div class="flex flex-col justify-center font-inter space-y-2">
                   <h1
                     class="text-4xl font-bold leading-5 text-left text-[#030712]"
@@ -203,11 +205,48 @@
             </div>
           </div>
       </section>
-      <div class="hero">
-        <div class="hero-content text-center text-neutral-content"></div>
-      </div>
     </header>
-    <main></main>
+    <!-- Start Main Section  -->
+    <main>
+        <section class="w-[95%] lg:w-[82%] mx-auto text-center mt-24 mb-28">
+            <h1 class="font-raleway text-4xl font-bold text-[#030712]">Best offers for you</h1>
+            <div class="flex flex-col lg:flex-row gap-[2%] my-12">
+                <!-- 1st Card -->
+                <div class="flex justify-between items-center bg-[#FFBF0F] lg:w-[49%] rounded-3xl mb-8">
+                    <div class="flex flex-col lg:p-[52px] flex-1 font-inter">
+                        <h1 class="text-4xl font-black text-[#030712CC]">15% OFF</h1>
+                        <p class="text-xl font-semibold text-[#030712CC]">on your next purchase</p>
+                        <p class="text-lg font-medium text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div>
+                        <img src="./images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center pl[26px] pr-[52px] items-center w-[40%] font-raleway">
+                        <h1 class="text-3xl  text-[#030712] font-bold">NEW15</h1>
+                        <h5 class="text-xl text-[#03071266] font-medium">Coupon Code</h5>
+                    </div>
+                </div>
+                <!-- Second Card -->
+                <div class="flex justify-between items-center bg-[#F78C9C] lg:w-[49%] rounded-3xl mb-8">
+                    <div class="flex flex-col lg:p-[52px] flex-1 font-inter">
+                        <h1 class="text-4xl font-black text-[#030712CC]">20% OFF</h1>
+                        <p class="text-xl font-semibold text-[#030712CC]">on your next purchase</p>
+                        <p class="text-lg font-medium text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div>
+                        <img src="./images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center pl[26px] pr-[52px] items-center w-[40%] font-raleway">
+                        <h1 class="text-3xl  text-[#030712] font-bold">Couple 20</h1>
+                        <h5 class="text-xl text-[#03071266] font-medium">Coupon Code</h5>
+                    </div>
+                </div>
+            </div>
+            <button class=" btn w-[16%] bg-transparent border-2 border-[#1DD100] rounded-xl">
+                <a href="#" class="text-xl font-raleway font-bold text-[#1DD100]">See All Offers</a>
+            </button>
+        </section>
+    </main>
     <footer></footer>
   </body>
 </html>
