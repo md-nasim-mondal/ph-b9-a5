@@ -4,9 +4,11 @@ let count = 0;
 for (const seat of allSeat) {
   seat.addEventListener("click", function (e) {
     count++;
-    if(count>4){
-        alert('You have already selected maximum number of seat for getting ticket');
-        return;
+    if (count > 4) {
+      alert(
+        "You have already selected maximum number of seat for getting ticket"
+      );
+      return;
     }
     const seatNumber = e.target.innerText;
     const seatPrice = 550;
@@ -39,8 +41,21 @@ for (const seat of allSeat) {
       const applyButton = document.getElementById("apply-btn");
       applyButton.removeAttribute("disabled");
     }
-
     setInnerText("seat-count", count);
+
+    const seatSelected = document.getElementById("seat-count").innerText;
+
+    if (seatSelected > 0) {
+      const phoneNumber = document.getElementById("number");
+      const nextButton = document.getElementById("next-button");
+      phoneNumber.addEventListener("input", function () {
+        if (this.value.length > 0) {
+          nextButton.removeAttribute("disabled");
+        } else {
+          nextButton.setAttribute("disabled", true);
+        }
+      });
+    }
   });
 }
 
@@ -53,30 +68,28 @@ applyBtn.addEventListener("click", function () {
     const latestTotalPrice = parseInt(
       document.getElementById("total-price").innerText
     );
-    const grandTotalPrice = latestTotalPrice * 0.85 ;
-    const discountPrice = latestTotalPrice * 0.15 ;
-    setInnerText('grand-total', grandTotalPrice);
-    setInnerText('discount-price', discountPrice);
+    const grandTotalPrice = latestTotalPrice * 0.85;
+    const discountPrice = latestTotalPrice * 0.15;
+    setInnerText("grand-total", grandTotalPrice);
+    setInnerText("discount-price", discountPrice);
 
-    const discountContainer = document.getElementById('discount-container');
-    discountContainer.classList.remove('hidden');
-    const couponContainer = document.getElementById('coupon-container');
-    couponContainer.classList.add('hidden');
-
-
+    const discountContainer = document.getElementById("discount-container");
+    discountContainer.classList.remove("hidden");
+    const couponContainer = document.getElementById("coupon-container");
+    couponContainer.classList.add("hidden");
   } else if (coupon === "Couple 20") {
     const latestTotalPrice = parseInt(
       document.getElementById("total-price").innerText
     );
-    const grandTotalPrice = latestTotalPrice * 0.8 ;
-    const discountPrice = latestTotalPrice * 0.2 ;
-    setInnerText('grand-total', grandTotalPrice);
-    setInnerText('discount-price', discountPrice);
+    const grandTotalPrice = latestTotalPrice * 0.8;
+    const discountPrice = latestTotalPrice * 0.2;
+    setInnerText("grand-total", grandTotalPrice);
+    setInnerText("discount-price", discountPrice);
 
-    const discountContainer = document.getElementById('discount-container');
-    discountContainer.classList.remove('hidden');
-    const couponContainer = document.getElementById('coupon-container');
-    couponContainer.classList.add('hidden');
+    const discountContainer = document.getElementById("discount-container");
+    discountContainer.classList.remove("hidden");
+    const couponContainer = document.getElementById("coupon-container");
+    couponContainer.classList.add("hidden");
   } else {
     alert("Invalid Coupon Code");
   }
