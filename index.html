@@ -346,7 +346,7 @@
             </div>
           </div>
         </div>
-        <!-- seat container start -->
+        <!-- seat container part start -->
         <div class="w-[95%] lg:w-[82%] mx-auto flex flex-col lg:flex-row p-4 lg:p-8 rounded-3xl bg-[#FFFFFF]">
           <div class="flex flex-col justify-center items-start flex-1 p-8 border-r-2 border-dashed border-[#0307124D]">
             <h2 class="font-raleway font-medium leading-7 mb-6 text-2xl text-[#030712]">Select Your Seat</h2>
@@ -357,9 +357,9 @@
             <div class="flex justify-end w-full my-6">
               <img class="px-9 py-3 w-[13%] bg-[#0307121A] rounded-xl" src="./images/steering-wheel.svg" alt="">
             </div>
-
+            <!-- seat  -->
             <div class="flex flex-col lg:flex-row gap-16 justify-between w-full">
-              <div class="flex gap-[10%] flex-1">
+              <div class="flex gap-[10%] ">
                 <div class="flex  gap-[10%] font-inter font-medium text-lg text-[#03071280] justify-between">
                   <div class=" grid grid-rows-10 gap-y-7 justify-center items-center">
                     <div>A</div>
@@ -397,7 +397,7 @@
                 </div>
                 </div>
               </div>
-              <div class="grid grid-cols-2 grid-rows-10 gap-6 mr-1">
+              <div class="grid grid-cols-2 grid-rows-10 gap-6 mr-1 font-inter font-medium text-lg text-[#03071280]">
                     <button class="seat px-9 py-[15%] w-[110%] bg-[#F7F8F8] rounded-xl">A3</button>
                     <button class="seat px-9 py-[15%] w-[110%] bg-[#F7F8F8] rounded-xl">A4</button>
                     <button class="seat px-9 py-[15%] w-[110%] bg-[#F7F8F8] rounded-xl">B3</button>
@@ -438,23 +438,38 @@
                 <h5>Total Price</h5>
                 <h5>BDT<span>0</span></h5>
               </div>
-              <form action="">
-                
-              <div class="w-full flex flex-col justify-start font-inter">
-                <label class="flex justify-start text-base font-semibold text-[#030712]" for="name">Passenger Name*</label>
-                <input type="text" id="name" placeholder="Enter your name" class="p-6 mb-6 mt-4 border-[1px] rounded-xl" required>
+              <div class="w-full flex rounded-xl bg-[#FFFFFF] pl-6 pr-2 py-2">
+                <input id="apply" placeholder="Have any coupon?" class="flex-1" type="text"><button for="apply" class="btn w-[20%] rounded-xl bg-[#1DD100] text-[#FFFFFF]">Apply</button>
               </div>
-              <div class="w-full flex flex-col justify-start font-inter">
-                <label class="flex justify-start text-base font-semibold text-[#030712]" for="number">Phone Number*</label>
-                <input type="number" id="number" placeholder="Enter your phone number" class="p-6 mb-6 mt-4 border-[1px] rounded-xl" required>
+              <div class="flex justify-between font-medium text-base font-inter text-[#030712] py-6">
+                <h5>Grand Total</h5>
+                <h5>BDT<span>0</span></h5>
               </div>
-              <div class="w-full flex flex-col justify-start font-inter">
-                <label class="flex justify-start text-base font-semibold text-[#030712]" for="email">Email ID</label>
-                <input type="email" id="email" placeholder="Enter your email id" class="p-6 mb-6 mt-4 border-[1px] rounded-xl">
-              </div>
-              <button type="submit" class="btn  w-full font-raleway font-extrabold text-xl text-[#FFFFFF] bg-[#1DD100]"><span>Next</span></button>
-              </form>
             </div>
+            <div class="w-full">
+              
+              <form>
+                
+                <div class="w-full flex flex-col justify-start font-inter">
+                  <label class="flex justify-start text-base font-semibold text-[#030712]" for="name">Passenger Name*</label>
+                  <input type="text" id="name" placeholder="Enter your name" class="p-6 mb-6 mt-4 border-[1px] rounded-xl" required>
+                </div>
+                <div class="w-full flex flex-col justify-start font-inter">
+                  <label class="flex justify-start text-base font-semibold text-[#030712]" for="number">Phone Number*</label>
+                  <input type="number" id="number" placeholder="Enter your phone number" class="p-6 mb-6 mt-4 border-[1px] rounded-xl" required>
+                </div>
+                <div class="w-full flex flex-col justify-start font-inter">
+                  <label class="flex justify-start text-base font-semibold text-[#030712]" for="email">Email ID</label>
+                  <input type="email" id="email" placeholder="Enter your email id" class="p-6 mb-6 mt-4 border-[1px] rounded-xl">
+                </div>
+                <button type="submit" class="btn  w-full font-raleway font-extrabold text-xl text-[#FFFFFF] bg-[#1DD100]"><span>Next</span></button>
+                </form>
+                <div class="flex justify-evenly gap-4 mt-6 font-inter text-base font-normal text-[#03071299]">
+                  <a class="underline" href="#">Terms and Conditions</a>
+                  <a class="underline" href="">Cancellation Policy</a>
+                </div>
+            </div>
+
           </div>
         </div>
       </section>
