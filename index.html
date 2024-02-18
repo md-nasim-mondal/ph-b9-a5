@@ -39,6 +39,11 @@
       .font-inter {
         font-family: "Inter", sans-serif;
       }
+      li{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -295,7 +300,7 @@
                 <div
                   class="p-4 w-[180px] rounded-xl bg-[#1DD10026] text-[#1DD100] flex items-center gap-2 justify-center"
                 >
-                  <img src="./images/seat-green.png" alt="" /><span
+                  <img src="./images/seat-green.png" alt="" /><span id="left-seat"
                     ><span>40 </span>Seats left</span
                   >
                 </div>
@@ -355,7 +360,7 @@
               <div class="flex font-inter font-medium text-lg text-[#1DD100]"><img src="./images/seat-green-filled.png" alt=""><span>Selected</span></div>
             </div>
             <div class="flex justify-end w-full my-6">
-              <img class="px-9 py-3 w-[13%] bg-[#0307121A] rounded-xl" src="./images/steering-wheel.svg" alt="">
+              <img class="px-9 py-3 w-[100px] bg-[#0307121A] rounded-xl" src="./images/steering-wheel.svg" alt="">
             </div>
             <!-- seat  -->
             <div class="flex flex-col lg:flex-row gap-16 justify-between w-full">
@@ -422,28 +427,33 @@
             </div>
             
           </div>
-          <div class="flex flex-col  items-start lg:w-[42%] lg:p-8">
+          <div class="flex flex-col  items-start lg:w-[42%] lg:p-8 lg:pr-0">
             <h2 class=" w-full text-start font-raleway font-medium leading-7 pb-6 text-2xl text-[#030712] border-b-[1px] border-dashed border-[#03071233]">Select Your Seat</h2>
             <div class="my-6 w-full p-8 bg-[#F7F8F8] rounded-xl">
               <div class="flex justify-between w-full border-b-[1px] border-dashed border-[#03071233] font-medium text-base font-inter text-[#030712] pb-4">
-                <p>Seat<span>0</span></p>
-                <h3>Class</h3>
+                <p>Seat <span id="seat-count" class="font-inter px-[2px] text-xs font-bold text-[#FFFFFF] bg-[#1DD100]">0</span></p>
+                <h3 class="pr-11">Class</h3>
                 <h3>Price</h3>
               </div>
-              <table class="w-full min-h-[10vh]">
+              <div id="info-container" class="w-full min-h-[10vh] flex flex-col">
                 
-              </table>
+              </div>
               <hr>
               <div class="flex justify-between font-medium text-base font-inter text-[#030712] py-4">
                 <h5>Total Price</h5>
-                <h5>BDT<span>0</span></h5>
+                <h5>BDT<span id="total-price">0</span></h5>
               </div>
-              <div class="w-full flex rounded-xl bg-[#FFFFFF] pl-6 pr-2 py-2">
-                <input id="apply" placeholder="Have any coupon?" class="flex-1" type="text"><button for="apply" class="btn w-[20%] rounded-xl bg-[#1DD100] text-[#FFFFFF]">Apply</button>
+              <div id="discount-container" class="flex hidden justify-between font-medium text-base font-inter text-[#030712] py-4">
+                <h5>Total Price</h5>
+                <h5>BDT<span id="discount-price">0</span></h5>
+              </div>
+
+              <div id="coupon-container" class="w-full flex rounded-xl bg-[#FFFFFF] pl-6 pr-2 py-2">
+                <input name="coupon" id="coupon" placeholder="Have any coupon?" class="flex-1" type="text"><button disabled type="submit"  id="apply-btn"  for="coupon" name="coupon" class="btn w-[20%] rounded-xl bg-[#1DD100] text-[#FFFFFF]">Apply</button>
               </div>
               <div class="flex justify-between font-medium text-base font-inter text-[#030712] py-6">
                 <h5>Grand Total</h5>
-                <h5>BDT<span>0</span></h5>
+                <h5>BDT<span id="grand-total">0</span></h5>
               </div>
             </div>
             <div class="w-full">
@@ -504,5 +514,6 @@
         </div>
       </section>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
