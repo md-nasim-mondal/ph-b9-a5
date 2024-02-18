@@ -6,7 +6,7 @@ for (const seat of allSeat) {
     count++;
     if (count > 4) {
       alert(
-        "You have already selected maximum number of seat for getting ticket"
+        "You have already selected maximum number of seat for getting ticket."
       );
       return;
     }
