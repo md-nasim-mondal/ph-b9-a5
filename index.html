@@ -25,6 +25,14 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-color": "#1DD100",
+              "secondary-color": "#030712B3",
+              "primary-font-color": "#030712",
+              "secondary-font-color": "#FFFFFF",
+              "third-color": "#03071299",
+              "fourth-color": "#03071233",
+              "fiveTh-color": "#030712CC",
+              "sixth-color": "#03071280",
             },
           },
         },
@@ -39,7 +47,7 @@
       .font-inter {
         font-family: "Inter", sans-serif;
       }
-      li{
+      h4{ 
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -74,44 +82,44 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li class="text-lg font-medium text-[#030712B3] leading-5">
+                <li class="text-lg font-medium text-secondary-color leading-5">
                   <a>Home</a>
                 </li>
-                <li class="text-lg font-medium text-[#030712B3] leading-5">
+                <li class="text-lg font-medium text-secondary-color leading-5">
                   <a>About</a>
                 </li>
-                <li class="text-lg font-medium text-[#030712B3] leading-5">
+                <li class="text-lg font-medium text-secondary-color leading-5">
                   <a>Destination</a>
                 </li>
-                <li class="text-lg font-medium text-[#030712B3] leading-5">
+                <li class="text-lg font-medium text-secondary-color leading-5">
                   <a>Search</a>
                 </li>
               </ul>
             </div>
             <a
-              class="text-xl lg:leading-10 lg:text-4xl text-[#030712] font-extrabold"
+              class="text-xl lg:leading-10 lg:text-4xl text-primary-font-color font-extrabold"
               >P-Ticket</a
             >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li
-                class="text-lg font-medium text-[#030712B3] leading-5 lg:px-7"
+                class="text-lg font-medium text-secondary-color leading-5 lg:px-7"
               >
                 <a>Home</a>
               </li>
               <li
-                class="text-lg font-medium text-[#030712B3] leading-5 lg:px-7"
+                class="text-lg font-medium text-secondary-color leading-5 lg:px-7"
               >
                 <a>About</a>
               </li>
               <li
-                class="text-lg font-medium text-[#030712B3] leading-5 lg:px-7"
+                class="text-lg font-medium text-secondary-color leading-5 lg:px-7"
               >
                 <a>Destination</a>
               </li>
               <li
-                class="text-lg font-medium text-[#030712B3] leading-5 lg:px-7"
+                class="text-lg font-medium text-secondary-color leading-5 lg:px-7"
               >
                 <a>Search</a>
               </li>
@@ -120,7 +128,7 @@
           <div class="navbar-end flex gap-2 lg:gap-6">
             <button>
               <div
-                class="flex gap-3 text-[#1DD100] px-4 lg:px-7 py-2 lg:py-4 bg-[#1DD1001A] text-xl font-bold rounded-xl border-solid border-[1px] border-[#1DD10066]"
+                class="flex gap-3 text-primary-color px-4 lg:px-7 py-2 lg:py-4 bg-[#1DD1001A] text-xl font-bold rounded-xl border-solid border-[1px] border-[#1DD10066]"
               >
                 <a href="#">Bus</a>
                 <a href="#"><img src="./images/bus-icon.png" alt="" /></a>
@@ -138,17 +146,17 @@
             <h1
               class="lg:mb-4 text-4xl lg:text-[64px] font-extrabold lg:leading-[80px] font-raleway"
             >
-              <span class="text-[#FFFFFF]">End-to-End Travel with</span>
+              <span class="text-secondary-font-color">End-to-End Travel with</span>
               <br />
-              <span class="text-[#1DD100]">P Paribahan</span>
+              <span class="text-primary-color">P Paribahan</span>
             </h1>
-            <p class="mb-8 text-lg leading-7 text-[#FFFFFF]">
+            <p class="mb-8 text-lg leading-7 text-secondary-font-color">
               Yes, you can run unit tests and view the results directly within
               the app. The <br />
               integrated testing features allow for a streamlined .
             </p>
             <a href="#counter-section"><button
-              class="px-8 text-xl font-bold leading-[65px] bg-[#1DD100] rounded-xl font-raleway"
+              class="px-8 text-xl font-bold leading-[65px] bg-primary-color rounded-xl font-raleway"
             >
               Buy Tickets
             </button></a>
@@ -161,48 +169,48 @@
           >
             <!-- 1st card -->
             <div
-              class="flex gap-4 px-6 py-8 border-b-[3px] border-[#1DD100] bg-[#FFFFFF] justify-center w-[full] lg:w-[25%] rounded-3xl lg:min-h-[20vh] items-center"
+              class="flex gap-4 px-6 py-8 border-b-[3px] border-primary-color bg-secondary-font-color justify-center w-[full] lg:w-[25%] rounded-3xl lg:min-h-[20vh] items-center"
             >
               <div><img src="./images/people.png" alt="" /></div>
               <div class="flex flex-col justify-center font-inter space-y-2">
                 <h1
-                  class="text-4xl font-bold leading-5 text-left text-[#030712]"
+                  class="text-4xl font-bold leading-5 text-left text-primary-font-color"
                 >
                   500K+
                 </h1>
-                <p class="text-lg leading-5 text-left text-[#03071299]">
+                <p class="text-lg leading-5 text-left text-third-color">
                   Registered users
                 </p>
               </div>
             </div>
             <!-- 2nd card -->
             <div
-              class="flex gap-4 px-5 py-8 border-b-[3px] border-[#1DD100] bg-[#FFFFFF] justify-center w-[full] lg:w-[25%] rounded-3xl lg:min-h-[20vh] items-center"
+              class="flex gap-4 px-5 py-8 border-b-[3px] border-primary-color bg-secondary-font-color justify-center w-[full] lg:w-[25%] rounded-3xl lg:min-h-[20vh] items-center"
             >
               <div><img src="./images/ticket-cupon.png" alt="" /></div>
               <div class="flex flex-col justify-center font-inter space-y-2">
                 <h1
-                  class="text-4xl font-bold leading-5 text-left text-[#030712]"
+                  class="text-4xl font-bold leading-5 text-left text-primary-font-color"
                 >
                   1.7 lacks
                 </h1>
-                <p class="text-lg leading-5 text-left text-[#03071299]">
+                <p class="text-lg leading-5 text-left text-third-color">
                   Tickets sold
                 </p>
               </div>
             </div>
             <!-- 3rd card -->
             <div
-              class="flex gap-4 px-6 py-8 border-b-[3px] border-[#1DD100] bg-[#FFFFFF] justify-center w-[full] lg:w-[25%] rounded-3xl lg:min-h-[20vh] items-center"
+              class="flex gap-4 px-6 py-8 border-b-[3px] border-primary-color bg-secondary-font-color justify-center w-[full] lg:w-[25%] rounded-3xl lg:min-h-[20vh] items-center"
             >
               <div><img src="./images/stoppage.png" alt="" /></div>
               <div class="flex flex-col justify-center font-inter space-y-2">
                 <h1
-                  class="text-4xl font-bold leading-5 text-left text-[#030712]"
+                  class="text-4xl font-bold leading-5 text-left text-primary-font-color"
                 >
                   80K+
                 </h1>
-                <p class="text-lg leading-5 text-left text-[#03071299]">
+                <p class="text-lg leading-5 text-left text-third-color">
                   Rental partners
                 </p>
               </div>
@@ -214,7 +222,7 @@
     <!-- Start Main Section  -->
     <main>
       <section class="w-[95%] lg:w-[82%] mx-auto text-center mt-24 mb-28">
-        <h1 class="font-raleway text-4xl font-bold text-[#030712]">
+        <h1 class="font-raleway text-4xl font-bold text-primary-font-color">
           Best offers for you
         </h1>
         <div class="flex flex-col lg:flex-row gap-[2%] my-12">
@@ -223,11 +231,11 @@
             class="flex justify-between items-center bg-[#FFBF0F] lg:w-[49%] rounded-3xl mb-8"
           >
             <div class="flex flex-col lg:p-[52px] flex-1 font-inter">
-              <h1 class="text-4xl font-black text-[#030712CC]">15% OFF</h1>
-              <p class="text-xl font-semibold text-[#030712CC]">
+              <h1 class="text-4xl font-black text-fiveTh-color">15% OFF</h1>
+              <p class="text-xl font-semibold text-fiveTh-color">
                 on your next purchase
               </p>
-              <p class="text-lg font-medium text-[#03071280]">
+              <p class="text-lg font-medium text-sixth-color">
                 use by January 2024
               </p>
             </div>
@@ -237,7 +245,7 @@
             <div
               class="flex flex-col justify-center pl[26px] pr-[52px] items-center w-[40%] font-raleway"
             >
-              <h1 class="text-3xl text-[#030712] font-bold">NEW15</h1>
+              <h1 class="text-3xl text-primary-font-color font-bold">NEW15</h1>
               <h5 class="text-xl text-[#03071266] font-medium">Coupon Code</h5>
             </div>
           </div>
@@ -246,11 +254,11 @@
             class="flex justify-between items-center bg-[#F78C9C] lg:w-[49%] rounded-3xl mb-8"
           >
             <div class="flex flex-col lg:p-[52px] flex-1 font-inter">
-              <h1 class="text-4xl font-black text-[#030712CC]">20% OFF</h1>
-              <p class="text-xl font-semibold text-[#030712CC]">
+              <h1 class="text-4xl font-black text-fiveTh-color">20% OFF</h1>
+              <p class="text-xl font-semibold text-fiveTh-color">
                 on your next purchase
               </p>
-              <p class="text-lg font-medium text-[#03071280]">
+              <p class="text-lg font-medium text-sixth-color">
                 use by January 2024
               </p>
             </div>
@@ -260,45 +268,45 @@
             <div
               class="flex flex-col justify-center pl[26px] pr-[52px] items-center w-[40%] font-raleway"
             >
-              <h1 class="text-3xl text-[#030712] font-bold">Couple 20</h1>
+              <h1 class="text-3xl text-primary-font-color font-bold">Couple 20</h1>
               <h5 class="text-xl text-[#03071266] font-medium">Coupon Code</h5>
             </div>
           </div>
         </div>
         <button
-          class="btn lg:w-[16%] bg-transparent border-2 border-[#1DD100] rounded-xl"
+          class="btn lg:w-[16%] bg-transparent border-2 border-primary-color rounded-xl"
         >
-          <a href="#" class="text-xl font-raleway font-bold text-[#1DD100]"
+          <a href="#" class="text-xl font-raleway font-bold text-primary-color"
             >See All Offers</a
           >
         </button>
       </section>
       <!-- P.H Paribahan Section Start-->
-      <section id="counter-section" class="w-full bg-[#F7F8F8] text-center mx-auto border-t-2 border-[#1DD100] rounded-t-[88px] py-32">
+      <section id="counter-section" class="w-full bg-[#F7F8F8] text-center mx-auto border-t-2 border-primary-color rounded-t-[88px] py-32">
         <div class="w-[95%] lg:w-[82%] mx-auto text-center pb-7">
           <div>
-            <h1 class="font-raleway text-4xl font-bold text-[#030712] mb-6">
+            <h1 class="font-raleway text-4xl font-bold text-primary-font-color mb-6">
               P.H Paribahan
             </h1>
-            <p class="font-inter text-lg font-normal text-[#03071299] mb-12">
+            <p class="font-inter text-lg font-normal text-third-color mb-12">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated <br />
               testing features allow for a streamlined .
             </p>
           </div>
           <!-- Greenline Paribahan Info Container -->
-          <div class="flex flex-col lg:flex-row w-full rounded-3xl bg-[#FFFFFF] lg:pr-16">
+          <div class="flex flex-col lg:flex-row w-full rounded-3xl bg-secondary-font-color lg:pr-16">
             <div class="flex-1 m-8">
               <div class="flex flex-col lg:flex-row justify-between gap-6">
                 <div class="flex gap-3">
                   <img src="./images/bus-logo.png" alt="" />
                   <div class="space-y-3">
-                    <h2 class="font-raleway text-3xl font-bold text-[#030712]">Greenline Paribahan</h2>
-                    <p class="font-inter text-lg font-normal text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                    <h2 class="font-raleway text-3xl font-bold text-primary-font-color">Greenline Paribahan</h2>
+                    <p class="font-inter text-lg font-normal text-third-color">Coach-009-WEB ! AC_Business</p>
                   </div>
                 </div>
                 <div
-                  class="p-4 w-[180px] rounded-xl bg-[#1DD10026] text-[#1DD100] flex items-center gap-2 justify-center"
+                  class="p-4 w-[180px] rounded-xl bg-[#1DD10026] text-primary-color flex items-center gap-2 justify-center"
                 >
                   <img src="./images/seat-green.png" alt="" /><span id="left-seat"
                     ><span>40 </span>Seats left</span
@@ -307,30 +315,30 @@
               </div>
               <div class="bg-[#F7F8F8] p-6 rounded-3xl mt-6">
                 <div
-                  class="flex justify-between border-b-2 border-dashed border-[#03071233] pb-4 font-raleway text-lg font-semibold"
+                  class="flex justify-between border-b-2 border-dashed border-fourth-color pb-4 font-raleway text-lg font-semibold"
                 >
-                  <p class="text-[#03071299]">Route</p>
-                  <h5 class="text-[#030712]">Dhaka - Sylhet</h5>
+                  <p class="text-third-color">Route</p>
+                  <h5 class="text-primary-font-color">Dhaka - Sylhet</h5>
                 </div>
                 <div
-                  class="flex justify-between border-b-2 border-dashed border-[#03071233] py-4 font-raleway text-lg font-semibold"
+                  class="flex justify-between border-b-2 border-dashed border-fourth-color py-4 font-raleway text-lg font-semibold"
                 >
-                  <p class="text-[#03071299]">Departure Time</p>
-                  <h5 class="text-[#030712]">9:00 PM</h5>
+                  <p class="text-third-color">Departure Time</p>
+                  <h5 class="text-primary-font-color">9:00 PM</h5>
                 </div>
                 <div class="flex flex-col lg:flex-row gap-6 mt-6  lg:min-h-[6vh]">
                   <div
-                    class="flex-1 font-inter text-base font-medium py-4 lg:py-0 text-[#030712CC] bg-[#0307120D] flex justify-center items-center  rounded-xl"
+                    class="flex-1 font-inter text-base font-medium py-4 lg:py-0 text-fiveTh-color bg-[#0307120D] flex justify-center items-center  rounded-xl"
                   >
                     Boarding Point - Laxmipur
                   </div>
                   <div
-                    class="flex-1 font-inter text-base font-medium py-4 lg:py-0 text-[#030712CC] bg-[#0307120D] flex justify-center items-center  rounded-xl"
+                    class="flex-1 font-inter text-base font-medium py-4 lg:py-0 text-fiveTh-color bg-[#0307120D] flex justify-center items-center  rounded-xl"
                   >
                   Dropping Point - Bogura
                   </div>
                   <div
-                    class="flex-1 font-inter text-base font-medium py-4 lg:py-0 text-[#030712CC] bg-[#0307120D] flex justify-center items-center  rounded-xl"
+                    class="flex-1 font-inter text-base font-medium py-4 lg:py-0 text-fiveTh-color bg-[#0307120D] flex justify-center items-center  rounded-xl"
                   >
                   Est. Time - 11 Hour
                   </div>
@@ -345,19 +353,19 @@
             </div>
               <div class="flex flex-col justify-center items-center gap-6 font-raleway">
                 <img src="./images/fare.png" alt="" />
-                <h2 class="font-bold text-3xl text-[#030712]">550 Taka</h2>
-                <p class="font-semibold text-2xl text-[#03071299]">Per Seat</p>
+                <h2 class="font-bold text-3xl text-primary-font-color">550 Taka</h2>
+                <p class="font-semibold text-2xl text-third-color">Per Seat</p>
               </div>
             </div>
           </div>
         </div>
         <!-- seat container part start -->
-        <div class="w-[95%] lg:w-[82%] mx-auto flex flex-col lg:flex-row p-4 lg:p-8 rounded-3xl bg-[#FFFFFF]">
+        <div class="w-[95%] lg:w-[82%] mx-auto flex flex-col lg:flex-row p-4 lg:p-8 rounded-3xl bg-secondary-font-color">
           <div class="flex flex-col justify-center items-start flex-1 p-8 border-r-2 border-dashed border-[#0307124D]">
-            <h2 class="font-raleway font-medium leading-7 mb-6 text-2xl text-[#030712]">Select Your Seat</h2>
-            <div class="flex justify-between w-full border-y-[1px] border-dashed border-[#03071233] py-4">
-              <div class="flex font-inter font-medium text-lg text-[#03071280]"><img src="./images/seat-gray.png" alt=""><span>Available</span></div>
-              <div class="flex font-inter font-medium text-lg text-[#1DD100]"><img src="./images/seat-green-filled.png" alt=""><span>Selected</span></div>
+            <h2 class="font-raleway font-medium leading-7 mb-6 text-2xl text-primary-font-color">Select Your Seat</h2>
+            <div class="flex justify-between w-full border-y-[1px] border-dashed border-fourth-color py-4">
+              <div class="flex font-inter font-medium text-lg text-sixth-color"><img src="./images/seat-gray.png" alt=""><span>Available</span></div>
+              <div class="flex font-inter font-medium text-lg text-primary-color"><img src="./images/seat-green-filled.png" alt=""><span>Selected</span></div>
             </div>
             <div class="flex justify-end w-full my-6">
               <img class="px-9 py-3 w-[100px] bg-[#0307121A] rounded-xl" src="./images/steering-wheel.svg" alt="">
@@ -365,7 +373,7 @@
             <!-- seat  -->
             <div class="flex flex-col lg:flex-row gap-16 justify-between w-full">
               <div class="flex gap-[10%] ">
-                <div class="flex  gap-[10%] font-inter font-medium text-lg text-[#03071280] justify-between">
+                <div class="flex  gap-[10%] font-inter font-medium text-lg text-sixth-color justify-between">
                   <div class=" grid grid-rows-10 gap-y-7 justify-center items-center">
                     <div>A</div>
                     <div>B</div>
@@ -402,7 +410,7 @@
                 </div>
                 </div>
               </div>
-              <div class="grid grid-cols-2 grid-rows-10 gap-6 mr-1 font-inter font-medium text-lg text-[#03071280]">
+              <div class="grid grid-cols-2 grid-rows-10 gap-6 mr-1 font-inter font-medium text-lg text-sixth-color">
                     <button class="seat px-9 py-[15%] w-[110%] bg-[#F7F8F8] rounded-xl">A3</button>
                     <button class="seat px-9 py-[15%] w-[110%] bg-[#F7F8F8] rounded-xl">A4</button>
                     <button class="seat px-9 py-[15%] w-[110%] bg-[#F7F8F8] rounded-xl">B3</button>
@@ -428,10 +436,10 @@
             
           </div>
           <div class="flex flex-col  items-start lg:w-[42%] lg:p-8 lg:pr-0">
-            <h2 class=" w-full text-start font-raleway font-medium leading-7 pb-6 text-2xl text-[#030712] border-b-[1px] border-dashed border-[#03071233]">Select Your Seat</h2>
+            <h2 class=" w-full text-start font-raleway font-medium leading-7 pb-6 text-2xl text-primary-font-color border-b-[1px] border-dashed border-fourth-color">Select Your Seat</h2>
             <div class="my-6 w-full p-8 bg-[#F7F8F8] rounded-xl">
-              <div class="flex justify-between w-full border-b-[1px] border-dashed border-[#03071233] font-medium text-base font-inter text-[#030712] pb-4">
-                <p>Seat <span id="seat-count" class="font-inter px-[2px] text-xs font-bold text-[#FFFFFF] bg-[#1DD100]">0</span></p>
+              <div class="flex justify-between w-full border-b-[1px] border-dashed border-fourth-color font-medium text-base font-inter text-primary-font-color pb-4">
+                <p>Seat <span id="seat-count" class="font-inter px-[2px] text-xs font-bold text-secondary-font-color bg-primary-color">0</span></p>
                 <h3 class="pr-11">Class</h3>
                 <h3>Price</h3>
               </div>
@@ -439,21 +447,21 @@
                 
               </div>
               <hr>
-              <div class="flex justify-between font-medium text-base font-inter text-[#030712] py-4">
+              <div class="flex justify-between font-medium text-base font-inter text-primary-font-color py-4">
                 <h5>Total Price</h5>
-                <h5>BDT<span id="total-price">0</span></h5>
+                <h5>BDT <span id="total-price">0</span></h5>
               </div>
-              <div id="discount-container" class="flex hidden justify-between font-medium text-base font-inter text-[#030712] py-4">
+              <div id="discount-container" class="flex hidden justify-between font-medium text-base font-inter text-primary-font-color py-4">
                 <h5>Total Price</h5>
-                <h5>BDT<span id="discount-price">0</span></h5>
+                <h5>BDT <span id="discount-price">0</span></h5>
               </div>
 
-              <div id="coupon-container" class="w-full flex rounded-xl bg-[#FFFFFF] pl-6 pr-2 py-2">
-                <input name="coupon" id="coupon" placeholder="Have any coupon?" class="flex-1" type="text"><button disabled type="submit"  id="apply-btn"  for="coupon" name="coupon" class="btn w-[20%] rounded-xl bg-[#1DD100] text-[#FFFFFF]">Apply</button>
+              <div id="coupon-container" class="w-full flex rounded-xl bg-secondary-font-color pl-6 pr-2 py-2">
+                <input name="coupon" id="coupon" placeholder="Have any coupon?" class="flex-1" type="text"><button disabled type="submit"  id="apply-btn"  for="coupon" name="coupon" class="btn w-[20%] rounded-xl bg-primary-color text-secondary-font-color">Apply</button>
               </div>
-              <div class="flex justify-between font-medium text-base font-inter text-[#030712] py-6">
+              <div class="flex justify-between font-medium text-base font-inter text-primary-font-color py-6">
                 <h5>Grand Total</h5>
-                <h5>BDT<span id="grand-total">0</span></h5>
+                <h5>BDT <span id="grand-total">0</span></h5>
               </div>
             </div>
             <div class="w-full">
@@ -461,20 +469,20 @@
               <form>
                 
                 <div class="w-full flex flex-col justify-start font-inter">
-                  <label class="flex justify-start text-base font-semibold text-[#030712]" for="name">Passenger Name*</label>
+                  <label class="flex justify-start text-base font-semibold text-primary-font-color" for="name">Passenger Name*</label>
                   <input type="text" id="name" placeholder="Enter your name" class="p-6 mb-6 mt-4 border-[1px] rounded-xl" required>
                 </div>
                 <div class="w-full flex flex-col justify-start font-inter">
-                  <label class="flex justify-start text-base font-semibold text-[#030712]" for="number">Phone Number*</label>
+                  <label class="flex justify-start text-base font-semibold text-primary-font-color" for="number">Phone Number*</label>
                   <input type="number" id="number" placeholder="Enter your phone number" class="p-6 mb-6 mt-4 border-[1px] rounded-xl" required>
                 </div>
                 <div class="w-full flex flex-col justify-start font-inter">
-                  <label class="flex justify-start text-base font-semibold text-[#030712]" for="email">Email ID</label>
+                  <label class="flex justify-start text-base font-semibold text-primary-font-color" for="email">Email ID</label>
                   <input type="email" id="email" placeholder="Enter your email id" class="p-6 mb-6 mt-4 border-[1px] rounded-xl">
                 </div>
-                <button type="submit" class="btn  w-full font-raleway font-extrabold text-xl text-[#FFFFFF] bg-[#1DD100]"><span>Next</span></button>
+                <button type="submit" class="btn  w-full font-raleway font-extrabold text-xl text-secondary-font-color bg-primary-color"><span>Next</span></button>
                 </form>
-                <div class="flex justify-evenly gap-4 mt-6 font-inter text-base font-normal text-[#03071299]">
+                <div class="flex justify-evenly gap-4 mt-6 font-inter text-base font-normal text-third-color">
                   <a class="underline" href="#">Terms and Conditions</a>
                   <a class="underline" href="">Cancellation Policy</a>
                 </div>
@@ -483,21 +491,26 @@
           </div>
         </div>
       </section>
+      <!-- Modal  -->
+      <section >
+        
+      </section>
+
     </main>
-    <footer class="w-full bg-[#030712]">
+    <footer class="w-full bg-primary-font-color">
       <section class="w-[82%] mx-auto py-28">
         <div class="flex flex-col lg:flex-row justify-between pb-12 border-b-[1px] border-dashed border-[#FFFFFF4D]">
           <div>
-            <h1 class="font-raleway text-4xl font-extrabold text-[#FFFFFF] mb-4">P-Ticket</h1>
+            <h1 class="font-raleway text-4xl font-extrabold text-secondary-font-color mb-4">P-Ticket</h1>
             <p class="text-lg font-normal font-inter text-[#FFFFFFCC] pb-2 lg:pb-0">P-Ticket is a digital platform to make your
               <br> daily commuting better.</p>
           </div>
           <div class="flex flex-col justify-center items-center">
-            <h2 class="font-raleway text-xl font-semibold text-[#FFFFFF] mb-5">Download our app</h2>
+            <h2 class="font-raleway text-xl font-semibold text-secondary-font-color mb-5">Download our app</h2>
             <div class="border-2 p-2 rounded-xl">
               <a href="" class="flex gap-4 ">
                 <img src="./images/playstore.png" alt="playStore">
-                <p class="text-2xl text-[#FFFFFF]"><span class="text-lg">GET IT ON</span>
+                <p class="text-2xl text-secondary-font-color"><span class="text-lg">GET IT ON</span>
                 <br>Google Play 
                 </p>
               </a>
@@ -506,7 +519,7 @@
         </div>
         <div class="flex flex-col lg:flex-row justify-between mt-4 lg:mt-8 font-inter text-base">
           <p class="font-normal text-[#FFFFFFB2] pb-2 lg:pb-0">@all rights reserved, P-Ticket services limited.2024</p>
-          <div class=" font-medium text-[#FFFFFF] flex flex-col lg:flex-row gap-8">
+          <div class=" font-medium text-secondary-font-color flex flex-col lg:flex-row gap-8">
             <a href="#">Terms & condition</a>
             <a href="#">Return & refund policy</a>
             <a href="#">Privacy policy</a>

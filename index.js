@@ -4,23 +4,27 @@ let count = 0;
 for (const seat of allSeat) {
   seat.addEventListener("click", function (e) {
     count++;
+    if(count>4){
+        alert('You have already selected maximum number of seat for getting ticket');
+        return;
+    }
     const seatNumber = e.target.innerText;
     const seatPrice = 550;
     const price = parseInt(seatPrice);
     const seatClass = "Economy";
 
     const seatInfoContainer = document.getElementById("info-container");
-    const li = document.createElement("li");
+    const h4 = document.createElement("h4");
     const p = document.createElement("p");
     p.innerText = seatNumber;
     const p2 = document.createElement("p");
     p2.innerText = seatClass;
     const p3 = document.createElement("p");
     p3.innerText = price;
-    li.appendChild(p);
-    li.appendChild(p2);
-    li.appendChild(p3);
-    seatInfoContainer.appendChild(li);
+    h4.appendChild(p);
+    h4.appendChild(p2);
+    h4.appendChild(p3);
+    seatInfoContainer.appendChild(h4);
     const totalPrice = totalCost(count, price);
     setInnerText("total-price", totalPrice);
     setInnerText("grand-total", totalPrice);
