@@ -96,7 +96,7 @@ applyBtn.addEventListener("click", function () {
 });
 
 function setInnerText(id, value) {
-  document.getElementById(id).innerText = value;
+  document.getElementById(id).innerText = value ;
 }
 
 function totalCost(totalSeat, price) {
