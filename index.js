@@ -75,6 +75,8 @@ applyBtn.addEventListener("click", function () {
 
     const discountContainer = document.getElementById("discount-container");
     discountContainer.classList.remove("hidden");
+    const congratsMessage = document.getElementById("congrats-message");
+    congratsMessage.classList.remove("hidden");
     const couponContainer = document.getElementById("coupon-container");
     couponContainer.classList.add("hidden");
   } else if (coupon === "Couple 20") {
@@ -88,6 +90,8 @@ applyBtn.addEventListener("click", function () {
 
     const discountContainer = document.getElementById("discount-container");
     discountContainer.classList.remove("hidden");
+    const congratsMessage = document.getElementById("congrats-message");
+    congratsMessage.classList.remove("hidden");
     const couponContainer = document.getElementById("coupon-container");
     couponContainer.classList.add("hidden");
   } else {
